@@ -2,7 +2,10 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './containers/App';
+import apiData from './API/apiData';
 
+const pokemons = apiData();
+console.log(pokemons);
 ReactDOM.render(
   <React.StrictMode>
     <App />
