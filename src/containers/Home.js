@@ -21,7 +21,7 @@ const Home = () => {
   }, []);
   return (
     <div className="container is-centered">
-      <h1 className="title is-1">Catalogue</h1>
+      <h1 className="title is-1 has-text-centered">Catalogue</h1>
       <div className="tile is-ancestor">
         <div className="tile is-12 is-parent is-flex-wrap-wrap">
           <PokemonCard />
