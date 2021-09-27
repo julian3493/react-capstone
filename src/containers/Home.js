@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import axios from 'axios';
 import { useDispatch } from 'react-redux';
 import { setPokemons } from '../redux/actions/actions';
+import PokemonCard from '../components/PokemonCard';
 
 const Home = () => {
   const dispatch = useDispatch();
@@ -19,8 +20,13 @@ const Home = () => {
     fetchPokemons();
   }, []);
   return (
-    <div>
-      <h1>Catalogue</h1>
+    <div className="container is-centered">
+      <h1 className="title is-1">Catalogue</h1>
+      <div className="tile is-ancestor">
+        <div className="tile is-12 is-parent is-flex-wrap-wrap">
+          <PokemonCard />
+        </div>
+      </div>
     </div>
   );
 };
