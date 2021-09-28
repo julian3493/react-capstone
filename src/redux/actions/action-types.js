@@ -1,2 +1,2 @@
 export const SET_POKEMONS = 'SET_POKEMONS';
-export const OTHER = 'OTHER';
+export const SELECTED_POKEMON = 'SELECTED_POKEMON';
