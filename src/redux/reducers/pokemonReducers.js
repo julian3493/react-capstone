@@ -2,7 +2,7 @@ import { SELECTED_POKEMON, SET_POKEMONS } from '../actions/action-types';
 
 const initialState = {
   pokemons: [
-    { name: 'bulbasaur', url: 'url' },
+    { id: 1, name: 'bulbasaur' },
   ],
 };
 
