@@ -1,2 +1,3 @@
 export const SET_POKEMONS = 'SET_POKEMONS';
 export const SELECTED_POKEMON = 'SELECTED_POKEMON';
+export const FILTER_TYPE = 'FILTER_TYPE';
