@@ -19,6 +19,7 @@ const PokemonDetails = () => {
       .catch((err) => {
         console.log('Error', err);
       });
+    console.log(response.data);
     dispatch(selectedPokemon(response.data));
   };
 
@@ -40,7 +41,7 @@ const PokemonDetails = () => {
           </div>
           <div className="card-image">
             <figure className="image is-4by3">
-              <img src={pokemon.sprites.front_default} alt={name} />
+              <img src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${pokemonId}.png`} alt={name} />
             </figure>
           </div>
           <div className="card-content">

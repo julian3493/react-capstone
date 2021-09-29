@@ -3,6 +3,7 @@ import axios from 'axios';
 import { useDispatch } from 'react-redux';
 import { setPokemons } from '../redux/actions/actions';
 import PokemonCard from '../components/PokemonCard';
+import Filter from '../components/FilterOptions';
 /* eslint-disable no-await-in-loop */
 
 const Home = () => {
@@ -35,7 +36,7 @@ const Home = () => {
   }, []);
   return (
     <div className="container is-centered">
-      <h1 className="title is-1 has-text-centered">Catalogue</h1>
+      <Filter />
       <div className="tile is-ancestor">
         <div className="tile is-12 is-parent is-flex-wrap-wrap">
           <PokemonCard />
