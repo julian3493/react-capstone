@@ -1,4 +1,6 @@
 import React from 'react';
+import { useDispatch } from 'react-redux';
+import { filterType } from '../redux/actions/actions';
 
 const types = [
   'normal',
@@ -26,6 +28,11 @@ const types = [
 const setTypesOptions = () => types.map((type) => <option value={type} key={type}>{type}</option>);
 
 const Filter = () => {
+  const dispatch = useDispatch();
+
+  const filterTypeChange = (e) => {
+    dispatch(filterType(e.target.value));
+  };
   const help = [];
   console.log(help);
 
@@ -38,7 +45,7 @@ const Filter = () => {
         <div className="navbar-start">
           <div className="navbar-item select">
             <p>Select Type:&nbsp;&nbsp;</p>
-            <select id="filter-type" className="select">
+            <select id="filter-type" className="select" onChange={filterTypeChange}>
               <option value="">All</option>
               {setTypesOptions()}
             </select>
