@@ -2,16 +2,17 @@ import axios from 'axios';
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { useParams } from 'react-router-dom';
+import pokemonTypesContainer from '../components/pokemonTypesContainer';
 import { selectedPokemon } from '../redux/actions/actions';
+import '../styles/pokemonDetails.css';
 
 const PokemonDetails = () => {
   const { pokemonId } = useParams();
   const pokemon = useSelector((state) => state.selectedPokemon);
   const {
-    name, stats, types, height, weight,
+    name, types, height, weight,
   } = pokemon;
   const dispatch = useDispatch();
-  console.log(stats, types, height, weight);
 
   const fetchSelectedPokemon = async () => {
     const response = await axios
@@ -46,14 +47,22 @@ const PokemonDetails = () => {
           </div>
           <div className="card-content">
             <div className="content">
-              <p>
-                Height:
-                {height}
-              </p>
-              <p>
-                Weight:
-                {weight}
-              </p>
+              {pokemonTypesContainer(types)}
+              <div className="dimensions">
+                <p className="card-info-title">Dimensions</p>
+                <ul>
+                  <li>
+                    Height:
+                    &nbsp;
+                    {height}
+                  </li>
+                  <li>
+                    Weight:
+                    &nbsp;
+                    {weight}
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
