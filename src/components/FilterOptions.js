@@ -33,8 +33,6 @@ const Filter = () => {
   const filterTypeChange = (e) => {
     dispatch(filterType(e.target.value));
   };
-  const help = [];
-  console.log(help);
 
   return (
     <nav className="navbar">

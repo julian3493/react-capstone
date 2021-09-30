@@ -25,7 +25,6 @@ const PokemonCard = () => {
   };
 
   const filteredPokemons = filteredPokemon(pokemons, filters);
-  console.log(filteredPokemons);
   return filteredPokemons.map((pokemon) => {
     const { id, name } = pokemon;
     return (

@@ -20,7 +20,6 @@ const PokemonDetails = () => {
       .catch((err) => {
         console.log('Error', err);
       });
-    console.log(response.data);
     dispatch(selectedPokemon(response.data));
   };
 
