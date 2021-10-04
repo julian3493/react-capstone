@@ -1,6 +1,8 @@
-# Pokemon Cataloge React
+# Pokemon Cataloge React Capstone
 
 > It is an application that shows a list of pokemon where you can filter them by type, and you can click on one of them to go to another page where you can see more information.
+
+![screenshot](./public/screenshot.png)
 
 ## Built With
 
