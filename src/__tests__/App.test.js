@@ -1,8 +1,9 @@
-import { render, screen } from '@testing-library/react';
 import App from '../components/App';
+import renderer from 'react-test-renderer';
 
-test('renders learn react link', () => {
-  render(<App />);
-  const linkElement = screen.getByText(/POKEAPI/i);
-  expect(linkElement).toBeInTheDocument();
+it('it test the render Home page', () => {
+  const calculator = renderer
+    .create(<App />)
+    .toJSON();
+  expect(calculator).toMatchSnapshot();
 });
