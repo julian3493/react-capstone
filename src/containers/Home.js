@@ -15,7 +15,7 @@ const Home = () => {
       const pokeData = await axios
         .get(`https://pokeapi.co/api/v2/pokemon/${pokemonArray[i].name}`)
         .catch((err) => {
-          console.log('Error', err);
+          throw (err);
         });
       list.push(pokeData.data);
     }
@@ -26,7 +26,7 @@ const Home = () => {
     const response = await axios
       .get('https://pokeapi.co/api/v2/pokemon?offset=0&limit=151')
       .catch((err) => {
-        console.log('Error', err);
+        throw (err);
       });
     fetchPokemonsData(response.data.results);
   };

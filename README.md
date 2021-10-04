@@ -28,6 +28,7 @@ To get a local copy up and running follow these simple example steps.
 
 - Clone this repository. Type `git clone https://github.com/julian3493/react-capstone.git`
 - Navigate to the project folder (bookstore-react) `react-capstone`
+- To be able to run the web app you need to install Node dependencies by typing the following command on your terminal: `npm install`
 
 ### Run
 

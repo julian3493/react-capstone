@@ -18,7 +18,7 @@ const PokemonDetails = () => {
     const response = await axios
       .get(`https://pokeapi.co/api/v2/pokemon/${pokemonId}`)
       .catch((err) => {
-        console.log('Error', err);
+        throw (err);
       });
     dispatch(selectedPokemon(response.data));
   };
