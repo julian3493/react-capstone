@@ -34,6 +34,10 @@ To get a local copy up and running follow these simple example steps.
 
 Run the application launching your local webserver by typing `npm run start`. If the browser doesn't open automatically, open `localhost:3000` inside your browser.
 
+### Testing
+
+Use `npm test` or `yarn test` to run test
+
 ## Author
 ​
 👤 **Julian Ramos**
