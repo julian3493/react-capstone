@@ -31,7 +31,7 @@ const Filter = ({ handleFilter }) => (
     <div className="navbar-brand">
       POKEAPI
     </div>
-    <div className="navbar-menu">
+    <div className="navbar-menu is-active">
       <div className="navbar-start">
         <div className="navbar-item select">
           <p>Select Type:&nbsp;&nbsp;</p>
