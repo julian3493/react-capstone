@@ -1,7 +1,7 @@
 import axios from 'axios';
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { useParams } from 'react-router-dom';
+import { useParams, Link } from 'react-router-dom';
 import pokemonTypesContainer from '../components/pokemonTypesContainer';
 import { selectedPokemon } from '../redux/actions/actions';
 import '../styles/pokemonDetails.css';
@@ -64,6 +64,7 @@ const PokemonDetails = () => {
               </div>
             </div>
           </div>
+          <Link to="/" className="backLink button">Back</Link>
         </div>
       </div>
     </div>

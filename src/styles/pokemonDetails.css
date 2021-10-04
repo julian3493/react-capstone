@@ -18,3 +18,9 @@
 .card-info-title {
   font-weight: bold;
 }
+
+.backLink {
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+}
