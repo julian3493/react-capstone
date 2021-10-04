@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import axios from 'axios';
 import { useDispatch } from 'react-redux';
-import { setPokemons } from '../redux/actions/actions';
+import { filterType, setPokemons } from '../redux/actions/actions';
 import PokemonCard from './PokemonCard';
 import Filter from '../components/FilterOptions';
 /* eslint-disable no-await-in-loop */
@@ -34,9 +34,14 @@ const Home = () => {
   useEffect(() => {
     fetchPokemons();
   }, []);
+
+  const filterTypeChange = (e) => {
+    dispatch(filterType(e.target.value));
+  };
+
   return (
     <div className="container is-centered">
-      <Filter />
+      <Filter handleFilter={filterTypeChange} />
       <div className="tile is-ancestor">
         <div className="tile is-12 is-parent is-flex-wrap-wrap">
           <PokemonCard />

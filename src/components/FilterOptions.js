@@ -1,6 +1,5 @@
 import React from 'react';
-import { useDispatch } from 'react-redux';
-import { filterType } from '../redux/actions/actions';
+import PropTypes from 'prop-types';
 
 const types = [
   'normal',
@@ -27,31 +26,27 @@ const types = [
 
 const setTypesOptions = () => types.map((type) => <option value={type} key={type}>{type}</option>);
 
-const Filter = () => {
-  const dispatch = useDispatch();
-
-  const filterTypeChange = (e) => {
-    dispatch(filterType(e.target.value));
-  };
-
-  return (
-    <nav className="navbar">
-      <div className="navbar-brand">
-        POKEAPI
-      </div>
-      <div className="navbar-menu">
-        <div className="navbar-start">
-          <div className="navbar-item select">
-            <p>Select Type:&nbsp;&nbsp;</p>
-            <select id="filter-type" className="select" onChange={filterTypeChange}>
-              <option value="">All</option>
-              {setTypesOptions()}
-            </select>
-          </div>
+const Filter = ({ handleFilter }) => (
+  <nav className="navbar">
+    <div className="navbar-brand">
+      POKEAPI
+    </div>
+    <div className="navbar-menu">
+      <div className="navbar-start">
+        <div className="navbar-item select">
+          <p>Select Type:&nbsp;&nbsp;</p>
+          <select id="filter-type" className="select" onChange={handleFilter}>
+            <option value="">All</option>
+            {setTypesOptions()}
+          </select>
         </div>
       </div>
-    </nav>
-  );
+    </div>
+  </nav>
+);
+
+Filter.propTypes = {
+  handleFilter: PropTypes.func.isRequired,
 };
 
 export default Filter;
