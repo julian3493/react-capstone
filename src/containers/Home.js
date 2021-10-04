@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import axios from 'axios';
 import { useDispatch } from 'react-redux';
 import { setPokemons } from '../redux/actions/actions';
-import PokemonCard from '../components/PokemonCard';
+import PokemonCard from './PokemonCard';
 import Filter from '../components/FilterOptions';
 /* eslint-disable no-await-in-loop */
 

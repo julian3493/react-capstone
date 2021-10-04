@@ -1,6 +1,6 @@
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
-import Home from './Home';
-import PokemonDetails from './PokemonDetails';
+import Home from '../containers/Home';
+import PokemonDetails from '../containers/PokemonDetails';
 
 const Routes = () => (
   <BrowserRouter>
