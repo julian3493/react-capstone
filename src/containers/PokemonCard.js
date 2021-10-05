@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 
@@ -49,6 +50,18 @@ const PokemonCard = () => {
       </div>
     );
   });
+};
+
+getPokemonTypes.propTypes = {
+  pokemon: PropTypes.shape({
+    abilities: PropTypes.arrayOf,
+    height: PropTypes.number,
+    id: PropTypes.number,
+    name: PropTypes.string,
+    stats: PropTypes.arrayOf,
+    types: PropTypes.arrayOf,
+    weight: PropTypes.number,
+  }),
 };
 
 export default PokemonCard;

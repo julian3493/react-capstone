@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 const pokemonTypesContainer = (types) => (
   <div className="typesContainer">
@@ -8,5 +9,9 @@ const pokemonTypesContainer = (types) => (
     </ul>
   </div>
 );
+
+pokemonTypesContainer.propTypes = {
+  types: PropTypes.arrayOf.isRequired,
+};
 
 export default pokemonTypesContainer;
