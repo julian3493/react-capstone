@@ -1,7 +1,7 @@
-import App from '../components/App';
 import renderer from 'react-test-renderer';
+import App from '../components/App';
 
-it('it test the render Home page', () => {
+it('it tests the render App correctly', () => {
   const calculator = renderer
     .create(<App />)
     .toJSON();

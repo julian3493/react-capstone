@@ -1,0 +1,81 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`it tests the render of pokemon details page correctly 1`] = `
+<div
+  className="section is-medium"
+>
+  <div
+    className="container"
+  >
+    <div
+      className="card"
+    >
+      <div
+        className="card-header"
+      >
+        <p
+          className="card-header-title is-capitalized"
+        >
+          #
+           
+        </p>
+      </div>
+      <div
+        className="card-image"
+      >
+        <figure
+          className="image is-4by3"
+        >
+          <img
+            src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/undefined.png"
+          />
+        </figure>
+      </div>
+      <div
+        className="card-content"
+      >
+        <div
+          className="content"
+        >
+          <div
+            className="typesContainer"
+          >
+            <p
+              className="card-info-title"
+            >
+              Types
+            </p>
+            <ul>
+              <p />
+            </ul>
+          </div>
+          <div
+            className="dimensions"
+          >
+            <p
+              className="card-info-title"
+            >
+              Dimensions
+            </p>
+            <ul>
+              <li>
+                Height:  
+              </li>
+              <li>
+                Weight:  
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <a
+        className="backLink button"
+        href="/"
+        onClick={[Function]}
+      >
+        Back
+      </a>
+    </div>
+  </div>
+</div>
+`;
