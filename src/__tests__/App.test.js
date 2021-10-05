@@ -2,8 +2,8 @@ import renderer from 'react-test-renderer';
 import App from '../components/App';
 
 it('it tests the render App correctly', () => {
-  const calculator = renderer
+  const App = renderer
     .create(<App />)
     .toJSON();
-  expect(calculator).toMatchSnapshot();
+  expect(App).toMatchSnapshot();
 });

@@ -1,17 +1,18 @@
 import renderer from 'react-test-renderer';
-import Home from '../containers/Home';
 import { Provider } from 'react-redux';
-import store from '../redux/store';
 import { BrowserRouter } from 'react-router-dom';
+import Home from '../containers/Home';
+import store from '../redux/store';
 
 it('it tests the render of home page correctly', () => {
-  const calculator = renderer
+  const home = renderer
     .create(
-    <Provider store={store}>
-      <BrowserRouter>
-        <Home />
-      </BrowserRouter>
-    </Provider>)
+      <Provider store={store}>
+        <BrowserRouter>
+          <Home />
+        </BrowserRouter>
+      </Provider>,
+    )
     .toJSON();
-  expect(calculator).toMatchSnapshot();
+  expect(home).toMatchSnapshot();
 });

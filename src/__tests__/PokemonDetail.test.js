@@ -1,17 +1,18 @@
-import renderer from 'react-test-renderer'
-import PokemonDetails from '../containers/PokemonDetails';
+import renderer from 'react-test-renderer';
 import { Provider } from 'react-redux';
-import store from '../redux/store';
 import { BrowserRouter } from 'react-router-dom';
+import PokemonDetails from '../containers/PokemonDetails';
+import store from '../redux/store';
 
 it('it tests the render of pokemon details page correctly', () => {
-  const calculator = renderer
+  const pokemondetails = renderer
     .create(
-    <Provider store={store}>
-      <BrowserRouter>
-        <PokemonDetails />
-      </BrowserRouter>
-    </Provider>)
+      <Provider store={store}>
+        <BrowserRouter>
+          <PokemonDetails />
+        </BrowserRouter>
+      </Provider>,
+    )
     .toJSON();
-  expect(calculator).toMatchSnapshot();
+  expect(pokemondetails).toMatchSnapshot();
 });
