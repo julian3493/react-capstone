@@ -1,22 +1,8 @@
-import renderer from 'react-test-renderer';
 import { Provider } from 'react-redux';
 import { BrowserRouter } from 'react-router-dom';
 import { render } from '@testing-library/react';
 import PokemonDetails from '../containers/PokemonDetails';
 import store from '../redux/store';
-
-it('it tests the render of pokemon details page correctly', () => {
-  const pokemondetails = renderer
-    .create(
-      <Provider store={store}>
-        <BrowserRouter>
-          <PokemonDetails />
-        </BrowserRouter>
-      </Provider>,
-    )
-    .toJSON();
-  expect(pokemondetails).toMatchSnapshot();
-});
 
 describe('render correctly the pokemon card details', () => {
   it('renders an element card', () => {
