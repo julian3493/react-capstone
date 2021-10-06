@@ -55,4 +55,17 @@ describe('render correctly the pokemon card details', () => {
     const cardContent = document.querySelector('.card-content');
     expect(pokemonCardDetails.children[2]).toEqual(cardContent);
   });
+
+  it('renders a back button in the card', () => {
+    render(
+      <Provider store={store}>
+        <BrowserRouter>
+          <PokemonDetails />
+        </BrowserRouter>
+      </Provider>,
+    );
+    const pokemonCardDetails = document.querySelector('.card');
+    const cardContent = document.querySelector('.backLink');
+    expect(pokemonCardDetails.lastElementChild).toEqual(cardContent);
+  });
 });
