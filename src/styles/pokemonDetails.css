@@ -1,0 +1,26 @@
+.card {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.content {
+  display: flex;
+}
+
+.typesContainer {
+  width: 50%;
+}
+
+.dimensions {
+  width: 50%;
+}
+
+.card-info-title {
+  font-weight: bold;
+}
+
+.backLink {
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+}

@@ -1,0 +1,188 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`it tests the render App correctly 1`] = `
+<div
+  className="container is-centered"
+>
+  <nav
+    className="navbar"
+  >
+    <div
+      className="navbar-brand"
+    >
+      POKEAPI
+    </div>
+    <div
+      className="navbar-menu is-active"
+    >
+      <div
+        className="navbar-start"
+      >
+        <div
+          className="navbar-item select"
+        >
+          <p>
+            Select Type:  
+          </p>
+          <select
+            className="select"
+            id="filter-type"
+            onChange={[Function]}
+          >
+            <option
+              value=""
+            >
+              All
+            </option>
+            <option
+              value="normal"
+            >
+              normal
+            </option>
+            <option
+              value="fighting"
+            >
+              fighting
+            </option>
+            <option
+              value="flying"
+            >
+              flying
+            </option>
+            <option
+              value="poison"
+            >
+              poison
+            </option>
+            <option
+              value="ground"
+            >
+              ground
+            </option>
+            <option
+              value="rock"
+            >
+              rock
+            </option>
+            <option
+              value="bug"
+            >
+              bug
+            </option>
+            <option
+              value="ghost"
+            >
+              ghost
+            </option>
+            <option
+              value="steel"
+            >
+              steel
+            </option>
+            <option
+              value="fire"
+            >
+              fire
+            </option>
+            <option
+              value="water"
+            >
+              water
+            </option>
+            <option
+              value="grass"
+            >
+              grass
+            </option>
+            <option
+              value="electric"
+            >
+              electric
+            </option>
+            <option
+              value="psychic"
+            >
+              psychic
+            </option>
+            <option
+              value="ice"
+            >
+              ice
+            </option>
+            <option
+              value="dragon"
+            >
+              dragon
+            </option>
+            <option
+              value="dark"
+            >
+              dark
+            </option>
+            <option
+              value="fairy"
+            >
+              fairy
+            </option>
+            <option
+              value="unknown"
+            >
+              unknown
+            </option>
+            <option
+              value="shadow"
+            >
+              shadow
+            </option>
+          </select>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <div
+    className="tile is-ancestor"
+  >
+    <div
+      className="tile is-12 is-parent is-flex-wrap-wrap"
+    >
+      <div
+        className="tile is-4 is-child box"
+      >
+        <a
+          href="/pokemon/1"
+          onClick={[Function]}
+        >
+          <div
+            className="card"
+          >
+            <div
+              className="card-header is-vertical"
+            >
+              <p
+                className="card-header-title is-capitalized"
+              >
+                #
+                1
+                 
+                bulbasaur
+              </p>
+            </div>
+            <div
+              className="card-image"
+            >
+              <figure
+                className="image is-4by3"
+              >
+                <img
+                  alt="bulbasaur"
+                  src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png"
+                />
+              </figure>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+`;
